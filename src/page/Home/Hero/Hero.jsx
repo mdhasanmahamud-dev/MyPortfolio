@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import SocialLinks from "../../../components/socialLinks";
+import banner from "../../../assets/Banner.jpg";
 const Hero = () => {
   return (
     <section
@@ -45,14 +46,18 @@ const Hero = () => {
         </div>
 
         {/* Right Content (Profile Photo) */}
-        <div className="flex-1 flex justify-center md:justify-left mt-6 md:mt-0">
-          <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
-            <img
-              src="/profile.jpg" // এখানে নিজের professional photo path দিবে
-              alt="Hasan Mahamud"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        {/* Right Content (Profile Photo) */}
+        <div className="flex items-center justify-center mt-7 md:mt-0">
+          <img
+            className="
+            w-full max-w-sm sm:max-w-md md:max-w-md
+            rounded-3xl
+            object-cover
+            transition-transform duration-500
+            hover:scale-105"
+            src={banner}
+            alt="Hasan Banner"
+          />
         </div>
       </div>
     </section>

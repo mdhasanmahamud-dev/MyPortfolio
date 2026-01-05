@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import SectionTitle from "../../../components/SectionTitle";
 const Projects = () => {
   return (
-    <div>
+    <div  >
       <SectionTitle
         title="Featured "
         highlight="Projects"
